@@ -1,0 +1,41 @@
+[INFO  - 2017-11-30T05:57:38.667Z] GhostDriver - Main - running on port 65313
+[INFO  - 2017-11-30T05:57:42.081Z] Session [60e6b290-d593-11e7-9be1-cfb988ce669d] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:25.0) Gecko/20100101 Firefox/25.0 ","webSecurityEnabled":true}
+[INFO  - 2017-11-30T05:57:42.081Z] Session [60e6b290-d593-11e7-9be1-cfb988ce669d] - page.customHeaders:  - {}
+[INFO  - 2017-11-30T05:57:42.081Z] Session [60e6b290-d593-11e7-9be1-cfb988ce669d] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-7-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"},"phantomjs.page.settings.userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:25.0) Gecko/20100101 Firefox/25.0 "}
+[INFO  - 2017-11-30T05:57:42.081Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 60e6b290-d593-11e7-9be1-cfb988ce669d
+[ERROR - 2017-11-30T05:57:43.080Z] Session [60e6b290-d593-11e7-9be1-cfb988ce669d] - page.onError - msg: ReferenceError: Can't find variable: _S_pSt
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-11-30T05:57:43.081Z] Session [60e6b290-d593-11e7-9be1-cfb988ce669d] - page.onError - stack:
+  global code (http://money.finance.sina.com.cn/corp/go.php/vCI_StockHolder/stockid/600006/displaytype/30.phtml:1293)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-11-30T05:57:43.084Z] Session [60e6b290-d593-11e7-9be1-cfb988ce669d] - page.onError - msg: ReferenceError: Can't find variable: hotstock_daily_a
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-11-30T05:57:43.084Z] Session [60e6b290-d593-11e7-9be1-cfb988ce669d] - page.onError - stack:
+  getHotStockA (http://money.finance.sina.com.cn/corp/view/js/corp_fenshi.js?date=20170123:403)
+  Init (http://money.finance.sina.com.cn/corp/view/js/corp_fenshi.js?date=20170123:390)
+  (anonymous function) (http://money.finance.sina.com.cn/corp/view/js/corp_fenshi.js?date=20170123:19)
+  Init (http://money.finance.sina.com.cn/corp/view/js/corp_fenshi.js?date=20170123:1132)
+  (anonymous function) (http://money.finance.sina.com.cn/corp/view/js/corp_fenshi.js?date=20170123:19)
+  Init (http://money.finance.sina.com.cn/corp/view/js/corp_fenshi.js?date=20170123:1167)
+  (anonymous function) (http://money.finance.sina.com.cn/corp/view/js/corp_fenshi.js?date=20170123:19)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-11-30T05:57:40.207Z] Session [5cf7c520-d593-11e7-adf1-43ac134ae4b6] - page.onError - msg: TypeError: undefined is not a constructor (evaluating '_S_fswf.SetVariable('S_FCN',fcN)')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-11-30T05:57:40.207Z] Session [5cf7c520-d593-11e7-adf1-43ac134ae4b6] - page.onError - stack:
+  _S_gFC (http://beacon.sina.com.cn/fc.html?a=g&n=SINAGLOBAL&r=0.42329818313010037:186)
+  _S_PP2FC (http://beacon.sina.com.cn/fc.html?a=g&n=SINAGLOBAL&r=0.42329818313010037:190)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-11-30T05:57:43.366Z] Session [5cf7c520-d593-11e7-adf1-43ac134ae4b6] - page.onError - msg: TypeError: undefined is not a constructor (evaluating '_S_fswf.SetVariable('S_FCN',fcN)')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-11-30T05:57:43.366Z] Session [5cf7c520-d593-11e7-adf1-43ac134ae4b6] - page.onError - stack:
+  _S_gFC (http://beacon.sina.com.cn/fc.html?a=g&n=SINAGLOBAL&r=0.40303158038295805:186)
+  _S_PP2FC (http://beacon.sina.com.cn/fc.html?a=g&n=SINAGLOBAL&r=0.40303158038295805:190)
+
+  phantomjs://platform/console++.js:263 in error
