@@ -12,17 +12,17 @@ from spider_stk_hld import stk_hld
 urlbase = 'http://money.finance.sina.com.cn/corp/go.php/vCI_StockHolder/stockid/'
 urltail = '/displaytype/30.phtml'
 
-codelst=['000528', '600006']
+codelst=['000528', '600006', '002426']
 
-stk_hld = {'key':'' ,
-          'data': [],
-           'num': [],
-           'ratio': [],
-           'type': []}
+stkhld = {}
+
+
 
 for code in codelst:
     url = urlbase + code + urltail
     print(url)
     spider = stk_hld()
-    stkhld = spider.stk_hld_scrapy(url, code)
-    print(stkhld)
+    stkhld[code] = spider.stk_hld_scrapy(url, code)
+
+print(stkhld)
+print(stkhld.keys())
