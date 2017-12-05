@@ -19,11 +19,12 @@ class stk_hld():
             print('data obtained. Ready to parse')
         else:
             print('no data obtained, please check the internet connection')
-        stk_hld = {'key': code,
+        stk_hld = {
                    'name': [],
                    'num': [],
                    'ratio': [],
-                   'type': []}
+                   'type': []
+                    }
         m = 1
         i = 0
         for item in products.split('\n'):
@@ -44,7 +45,7 @@ class stk_hld():
 
 
             # print(item)
-
+        stok_hld={code: stk_hld}
         print('\n========data extracted==========')
         return stk_hld
 
