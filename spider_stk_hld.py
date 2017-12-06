@@ -19,7 +19,7 @@ class stk_hld():
             print('data obtained. Ready to parse')
         else:
             print('no data obtained, please check the internet connection')
-        stk_hld = {
+        stk_hld = {'date':[],
                    'name': [],
                    'num': [],
                    'ratio': [],
@@ -28,8 +28,11 @@ class stk_hld():
         m = 1
         i = 0
         for item in products.split('\n'):
-
             case = str(m)
+            if '20' in item:
+                stk_hld['date'].append(item)
+                print(item)
+
             #print(case)
             if item == case:
                 print(str(m / 10 * 100) + '%')
