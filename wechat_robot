@@ -1,0 +1,34 @@
+import itchat, time
+import datetime as dt
+from apscheduler.schedulers.background import BackgroundScheduler
+import random
+
+def my_scheduler(runTime):
+    scheduler = BackgroundScheduler()
+    scheduler.add_job(tick, 'date', run_date=runTime)
+    scheduler.start()
+
+
+greenlist=['好好休息','多喝喝水','其实我是机器人','不要忘记吃东西']
+def tick():
+    users = itchat.search_friends(name=u'ly0865')
+    userName = users[0]['UserName']
+    meetDate=dt.date(2007,9,11)
+    now = dt.datetime.now()
+    nowDate=dt.date.today()
+    passDates=(nowDate-meetDate).days
+    itchat.send(u'今天是我们认识第%d天， %s晚安！' %(passDates,  random.sample(greenlist, 1)[0]), toUserName=userName)
+    nextTickTime = now+dt.timedelta(minutes=2)
+    nextTickTime=nextTickTime.strftime('%Y-%m-%d 00:00:00')
+    my_scheduler(nextTickTime)
+
+
+
+
+if __name__ == '__main__':
+    itchat.auto_login(enableCmdQR=True)
+    now = dt.datetime.now()
+    nextTickTime = now+dt.timedelta(minutes=2)
+    nextTickTime=nextTickTime.strftime('%Y-%m-%d 00:00:00')
+    my_scheduler(nextTickTime)
+    itchat.run()
