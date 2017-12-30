@@ -6,6 +6,10 @@
           <option name="url" value="https://github.com/jeepx5/stk_spider.git" />
           <option name="userName" value="" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="https://github.com/jeepx5/UrlCrawler.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
       </list>
     </option>
     <option name="cloneParentDir" value="$USER_HOME$/workspace" />
