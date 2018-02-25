@@ -4,8 +4,6 @@ import re
 pattern = u'(.+)'
 
 df = pd.read_csv('eng_org.csv')
-print(df.head(3))
-#df['rateNum']=df['rateNum'].str.replace('na', '0')
 df['meanprice']=df['meanprice'].str.replace('￥', '')
 
 df['group']=df['shop'].str.replace(r'(\(.+)', '')
